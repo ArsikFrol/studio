@@ -21,7 +21,7 @@ export default function Home() {
       <Services />
       <DiscussProject /> */}
       <div className=''>
-        ЛОГИНОВА ПРОТИВНАЯ
+        Любимая Виктория
         <Image className="block mx-auto py-[100px]" src={p} alt='' width={1000} height={1000} draggable='false' />
       </div>
     </>
