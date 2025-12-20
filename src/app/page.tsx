@@ -9,13 +9,14 @@ import Stages from "@/components/Stages";
 export default function Home() {
   return (
     <>
-      <Header />
+      {/* <Header />
       <Percentages />
       <Stages />
       <AboutUs />
       <CasesAll />
       <Services />
-      <DiscussProject />
+      <DiscussProject /> */}
+      ЛОГИНОВА ПРОТИВНАЯ
     </>
   );
 }
