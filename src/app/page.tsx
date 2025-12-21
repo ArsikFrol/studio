@@ -13,9 +13,10 @@ export default function Home() {
       {/* <Percentages />
       <Stages />
       <AboutUs />
-      <CasesAll />
+      
       <Services />
       <DiscussProject /> */}
+      <CasesAll />
     </>
   );
 }
