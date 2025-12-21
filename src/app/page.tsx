@@ -11,11 +11,12 @@ export default function Home() {
     <>
       <Header />
       {/* <Percentages />
-      <Stages />
+      
       <AboutUs />
       
       <Services />
       <DiscussProject /> */}
+      <Stages />
       <CasesAll />
     </>
   );

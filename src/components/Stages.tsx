@@ -1,6 +1,4 @@
-'use client'
-
-import React from "react"
+import Title from "./UI/Title"
 import Image from "next/image"
 
 import microcircuit from '../../public/microcircuit.png'
@@ -13,44 +11,22 @@ const listElem = [
 ]
 
 export default function Stages() {
-
-    const [activeOne, setActiveOne] = React.useState(false)
-    const [activeTwo, setActiveTwo] = React.useState(false)
-    const [activeThree, setActiveThree] = React.useState(false)
-    const [activeFour, setActiveFour] = React.useState(false)
-
-    const clickPlus = (id: number) => {
-        if (id == 1) setActiveOne(!activeOne)
-        else if (id == 2) setActiveTwo(!activeTwo)
-        else if (id == 3) setActiveThree(!activeThree)
-        else if (id == 4) setActiveFour(!activeFour)
-    }
-
     return (
         <div className='relative'>
-            <div className="w-390 mx-auto pt-87.5 pb-25">
-                <div className='text-[65px] mb-12.5'>Этапы создания</div>
-                <div className='grid grid-cols-2 grid-rows-[auto_auto] gap-12.5 w-250'>
-                    <div style={activeOne ? { height: `${250}px` } : { height: `${100}px` }} className="relative bg-[rgba(217,217,217,1)] w-112.5 rounded-2xl p-5">
-                        <div className="text-[31px] mb-5">{listElem[0].title}</div>
-                        <div style={activeOne ? {} : { display: 'none' }} className='text-[31px] w-100'>{listElem[0].desc}</div>
-                        <div style={activeOne ? { rotate: '45deg' } : {}} onClick={() => clickPlus(listElem[0].id)} className='transition-all absolute right-3.75 top-3.25 w-15 text-center text-[40px] bg-white rounded-4xl cursor-pointer'>+</div>
-                    </div>
-                    <div style={activeTwo ? { height: `${250}px` } : { height: `${100}px` }} className="relative bg-[rgba(217,217,217,1)] w-112.5 rounded-2xl p-5">
-                        <div className="text-[31px] mb-5">{listElem[1].title}</div>
-                        <div style={activeTwo ? {} : { display: 'none' }} className='text-[31px] w-100'>{listElem[1].desc}</div>
-                        <div style={activeTwo ? { rotate: '45deg' } : {}} onClick={() => clickPlus(listElem[1].id)} className='transition-all absolute right-3.75 top-3.25 w-15 text-center text-[40px] bg-white rounded-4xl cursor-pointer'>+</div>
-                    </div>
-                    <div style={activeThree ? { height: `${250}px` } : { height: `${100}px` }} className="relative bg-[rgba(217,217,217,1)] w-112.5 rounded-2xl p-5">
-                        <div className="text-[31px] mb-5">{listElem[2].title}</div>
-                        <div style={activeThree ? {} : { display: 'none' }} className='text-[31px] w-100'>{listElem[2].desc}</div>
-                        <div style={activeThree ? { rotate: '45deg' } : {}} onClick={() => clickPlus(listElem[2].id)} className='transition-all absolute right-3.75 top-3.25 w-15 text-center text-[40px] bg-white rounded-4xl cursor-pointer'>+</div>
-                    </div>
-                    <div style={activeFour ? { height: `${250}px` } : { height: `${100}px` }} className="relative bg-[rgba(217,217,217,1)] w-112.5 rounded-2xl p-5">
-                        <div className="text-[31px] mb-5">{listElem[3].title}</div>
-                        <div style={activeFour ? {} : { display: 'none' }} className='text-[31px] w-100'>{listElem[3].desc}</div>
-                        <div style={activeFour ? { rotate: '45deg' } : {}} onClick={() => clickPlus(listElem[3].id)} className='transition-all absolute right-3.75 top-3.25 w-15 text-center text-[40px] bg-white rounded-4xl cursor-pointer'>+</div>
-                    </div>
+            <div className="[@media(max-width:1920px)_and_(min-width:1640px)]:w-385 [@media(max-width:1639px)_and_(min-width:1330px)]:w-7xl [@media(max-width:1329px)_and_(min-width:1100px)]:w-5xl [@media(max-width:1099px)_and_(min-width:820px)]:w-192.5 [@media(max-width:819px)_and_(min-width:650px)]:w-160 mx-auto pt-87.5 pb-25">
+                <Title title="Этапы создания" />
+                <div className='grid grid-cols-2 [@media(max-width:1099px)_and_(min-width:0px)]:grid-cols-[auto] grid-rows-[auto_auto] gap-12.5 w-250 [@media(max-width:1099px)_and_(min-width:820px)]:w-192.5 [@media(max-width:819px)_and_(min-width:650px)]:w-160 mx-auto'>
+                    {
+                        listElem.map((obj: { id: number, title: string, desc: string }, index: number) => {
+                            return (
+                                <div className="relative border-[3px] border-[rgba(103,103,103,1)] rounded-3xl p-2.5 text-[31px] [@media(max-width:1329px)_and_(min-width:1100px)]:text-[25px] [@media(max-width:1099px)_and_(min-width:820px)]:text-[20px] [@media(max-width:819px)_and_(min-width:0px)]:text-[17px] font-light [@media(max-width:819px)_and_(min-width:0px)]:w-100 [@media(max-width:819px)_and_(min-width:0px)]:mx-auto" key={index}>
+                                    <div className='mb-[15px] font-medium'>{obj.title}</div>
+                                    <div className=''>{obj.desc}</div>
+                                    <div className='absolute right-2.5 top-2.5 text-[33px]  [@media(max-width:819px)_and_(min-width:0px)]:text-[25px]'>0{obj.id}</div>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
             </div>
             {/* <Image style={{ height: '692px' }} className="absolute rotate-180 -right-87.5 top-100" src={microcircuit} alt='' width={1083} height={692} draggable='false' /> */}
