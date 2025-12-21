@@ -25,8 +25,8 @@ export default function DiscussProject() {
                     }
                 </div>
             </div>
-            <Image className="absolute -top-50 -left-175" src={microcircuit} alt='' width={1083} height={692} draggable='false' />
-            <Image className="absolute top-105 right-0 rotate-180" src={microcircuit} alt='' width={1083} height={692} draggable='false' />
+            {/* <Image className="absolute -top-50 -left-175" src={microcircuit} alt='' width={1083} height={692} draggable='false' />
+            <Image className="absolute top-105 right-0 rotate-180" src={microcircuit} alt='' width={1083} height={692} draggable='false' /> */}
         </div>
     )
 }

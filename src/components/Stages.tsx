@@ -53,7 +53,7 @@ export default function Stages() {
                     </div>
                 </div>
             </div>
-            <Image style={{ height: '692px' }} className="absolute rotate-180 -right-87.5 top-100" src={microcircuit} alt='' width={1083} height={692} draggable='false' />
+            {/* <Image style={{ height: '692px' }} className="absolute rotate-180 -right-87.5 top-100" src={microcircuit} alt='' width={1083} height={692} draggable='false' /> */}
         </div>
     )
 }

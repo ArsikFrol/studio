@@ -20,7 +20,6 @@ export default function () {
                 block: 'center'
             });
 
-            // Фокус для клавиатурной навигации
             setTimeout(() => {
                 targetElement.focus();
             }, 500);
@@ -28,8 +27,8 @@ export default function () {
     };
 
     return (
-        <div className="w-390 mx-auto py-2.5 flex justify-between items-center">
-            <div className="flex gap-x-12.5 text-[30px] text-black">
+        <div className="w-390 mx-auto py-2.5 flex justify-between items-center [@media(min-width:1750px)]:w-[1540px] [@media(min-width:1400px)]:w-[1280px] [@media(min-width:1100px)]:w-[1000px] [@media(min-width:800px)]:w-[700px] [@media(max-width:800px)]:w-[500px]">
+            <div className="flex [@media(min-width:1750px)]:gap-x-12.5 [@media(min-width:1400px)]:gap-x-[30px] [@media(min-width:1100px)]:gap-x-[15px] [@media(min-width:1750px)]:text-[30px] [@media(min-width:1400px)]:text-[27px] text-black">
                 {
                     listElem.map((obj: { id: number, text: string, href: string }, index: number) => {
                         return (
@@ -38,9 +37,9 @@ export default function () {
                     })
                 }
             </div>
-            <div className="flex flex-col items-center gap-y-1.25">
-                <div className="text-[40px] font-semibold" >7 777 777 77</div>
-                <div className="text-[20px] font-extralight">24/7</div>
+            <div className="flex flex-col items-center">
+                <div className="[@media(min-width:1750px)]:text-[40px] [@media(min-width:1400px)]:text-[33px] font-semibold [@media(min-width:1400px)]:text-[28px]" >7 777 777 77</div>
+                <div className="[@media(min-width:1750px)]:text-[20px] [@media(min-width:1400px)]:text-[17px] font-extralight [@media(min-width:1400px)]:text-[12px]">24/7</div>
             </div>
         </div>
     )

@@ -10,12 +10,12 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Percentages />
+      {/* <Percentages />
       <Stages />
       <AboutUs />
       <CasesAll />
       <Services />
-      <DiscussProject />
+      <DiscussProject /> */}
     </>
   );
 }

@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from 'next/image'
 
-import cases from '../../public/cases/case.png'
+import cases from '../../public/case.png'
 
 const listElem = [
     { id: 1, image: cases },

@@ -32,7 +32,7 @@ export default function AboutUs() {
                 <div className='font-medium text-[37px]'>Подробнее о специалисте</div>
                 <Image className="" src={arrow} alt='' width={712} height={200} draggable='false' />
             </div>
-            <Image className="absolute -right-125 rotate-180" src={microcircuit} alt='' width={1083} height={692} draggable='false' />
+            {/* <Image className="absolute -right-125 rotate-180" src={microcircuit} alt='' width={1083} height={692} draggable='false' /> */}
         </div>
     )
 }

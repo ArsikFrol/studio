@@ -14,7 +14,7 @@ export default function Percentages() {
                 </div>
                 <Image src={percentages} alt='' width={662} height={582} draggable='false' />
             </div>
-            <Image className="absolute -left-3.75 top-112.5" src={microcircuit} alt='' width={1083} height={692} draggable='false' />
+            {/* <Image className="absolute -left-3.75 top-112.5" src={microcircuit} alt='' width={1083} height={692} draggable='false' /> */}
         </div>
     )
 }
