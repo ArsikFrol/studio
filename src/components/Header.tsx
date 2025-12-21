@@ -27,8 +27,8 @@ export default function () {
     };
 
     return (
-        <div className="mx-auto py-2.5 flex justify-between items-center [@media(max-width:1920px)_and_(min-width:1640px)]:w-[1540px] [@media(max-width:1639px)_and_(min-width:1330px)]:w-[1280px] [@media(max-width:1329px)_and_(min-width:1100px)]:w-[1024px] [@media(max-width:1099px)_and_(min-width:820px)]:w-[770px] [@media(max-width:819px)_and_(min-width:650px)]:w-[640px]">
-            <div className="[@media(max-width:819px)_and_(min-width:650px)]:hidden flex [@media(max-width:1920px)_and_(min-width:1640px)]:gap-x-12.5 [@media(max-width:1639px)_and_(min-width:1100px)]:gap-x-[20px] [@media(max-width:1099px)_and_(min-width:820px)]:gap-x-[10px] [@media(max-width:1920px)_and_(min-width:1640px)]:text-[30px] [@media(max-width:1639px)_and_(min-width:1330px)]:text-[27px] [@media(max-width:1329px)_and_(min-width:1100px)]:text-[22px] [@media(max-width:1099px)_and_(min-width:820px)]:text-[15px] text-black">
+        <div className="mx-auto py-2.5 flex justify-between items-center [@media(max-width:1920px)_and_(min-width:1640px)]:w-[1540px] [@media(max-width:1639px)_and_(min-width:1330px)]:w-[1280px] [@media(max-width:1329px)_and_(min-width:1100px)]:w-[1024px] [@media(max-width:1099px)_and_(min-width:820px)]:w-[770px] [@media(max-width:819px)_and_(min-width:650px)]:w-[640px] [@media(max-width:1099px)_and_(min-width:0px)]:pl-[50px]">
+            <div className="[@media(max-width:819px)_and_(min-width:0px)]:hidden flex [@media(max-width:1920px)_and_(min-width:1640px)]:gap-x-12.5 [@media(max-width:1639px)_and_(min-width:1100px)]:gap-x-[20px] [@media(max-width:1099px)_and_(min-width:820px)]:gap-x-[10px] [@media(max-width:1920px)_and_(min-width:1640px)]:text-[30px] [@media(max-width:1639px)_and_(min-width:1330px)]:text-[27px] [@media(max-width:1329px)_and_(min-width:1100px)]:text-[22px] [@media(max-width:1099px)_and_(min-width:820px)]:text-[15px] text-black">
                 {
                     listElem.map((obj: { id: number, text: string, href: string }, index: number) => {
                         return (
@@ -39,7 +39,7 @@ export default function () {
             </div>
             <div className="flex flex-col items-center">
                 <div className="[@media(max-width:1920px)_and_(min-width:1640px)]:text-[40px] font-semibold   [@media(max-width:1639px)_and_(min-width:1330px)]:text-[33px] [@media(max-width:1329px)_and_(min-width:1100px)]:text-[28px] [@media(max-width:1099px)_and_(min-width:820px)]:text-[23px]" >7 777 777 77</div>
-                <div className="[@media(max-width:1920px)_and_(min-width:1640px)]:text-[20px] font-extralight [@media(max-width:1639px)_and_(min-width:1330px)]:text-[17px] [@media(max-width:1329px)_and_(min-width:1100px)]:text-[12px] [@media(max-width:1099px)_and_(min-width:650px)]:hidden">24/7</div>
+                <div className="[@media(max-width:1099px)_and_(min-width:0px)]:hidden [@media(max-width:1920px)_and_(min-width:1640px)]:text-[20px] font-extralight [@media(max-width:1639px)_and_(min-width:1330px)]:text-[17px] [@media(max-width:1329px)_and_(min-width:1100px)]:text-[12px]">24/7</div>
             </div>
         </div>
     )
