@@ -21,7 +21,7 @@ export default function CasesAll() {
                 {
                     listElem.map((obj: { id: number, image: StaticImageData }, index: number) => {
                         return (
-                            <Image className="mx-auto [@media(max-width:1639px)_and_(min-width:1330px)]:w-[550px] [@media(max-width:1100px)_and_(min-width:0px)]:w-[400px]" key={index} src={obj.image} alt='' width={480} height={200} draggable='false' />
+                            <Image className="mx-auto [@media(max-width:1639px)_and_(min-width:1330px)]:w-[550px] [@media(max-width:1100px)_and_(min-width:0px)]:w-[400px] [@media(max-width:440px)_and_(min-width:0px)]:w-[250px]" key={index} src={obj.image} alt='' width={480} height={200} draggable='false' />
                         )
                     })
                 }
