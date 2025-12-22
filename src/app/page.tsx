@@ -14,9 +14,10 @@ export default function Home() {
       
       <AboutUs />
       
-      <Services />
+      
       <DiscussProject /> */}
       <Stages />
+      <Services />
       <CasesAll />
     </>
   );
