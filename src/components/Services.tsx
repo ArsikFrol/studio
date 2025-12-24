@@ -17,7 +17,7 @@ export default function Services() {
     }
 
     return (
-        <div className="relative z-10 [@media(max-width:1920px)_and_(min-width:1640px)]:w-390 [@media(max-width:1639px)_and_(min-width:1330px)]:w-7xl [@media(max-width:1329px)_and_(min-width:1100px)]:w-5xl [@media(max-width:1099px)_and_(min-width:820px)]:w-192.5 [@media(max-width:819px)_and_(min-width:0px)]:w-160 mx-auto py-25 [@media(max-width:1099px)_and_(min-width:0px)]:py-12.5">
+        <div className="relative z-10 [@media(max-width:1920px)_and_(min-width:1640px)]:w-390 [@media(max-width:1639px)_and_(min-width:1330px)]:w-7xl [@media(max-width:1329px)_and_(min-width:1100px)]:w-5xl [@media(max-width:1099px)_and_(min-width:820px)]:w-192.5 [@media(max-width:819px)_and_(min-width:650px)]:w-160 [@media(max-width:649px)_and_(min-width:0px)]:w-100 mx-auto py-25 [@media(max-width:1099px)_and_(min-width:0px)]:py-12.5">
             <Title title="Услуги" id="service" />
             <div className='grid grid-cols-3  [@media(max-width:819px)_and_(min-width:680px)]:grid-cols-2 [@media(max-width:680px)_and_(min-width:0px)]:grid-cols-1 gap-y-17.5 [@media(max-width:1329px)_and_(min-width:1100px)]:gap-y-7.5 [@media(max-width:680px)_and_(min-width:0px)]:gap-y-5'>
                 {

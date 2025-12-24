@@ -1,5 +1,7 @@
 import Image from "next/image"
 
+import AnimationComponent from "./AnimationComponent/AnimationComponent"
+
 import percentages from '../../public/percentages.png'
 import microcircuit from '../../public/microcircuit.png'
 
@@ -12,7 +14,7 @@ export default function Percentages() {
                     <div className='text-[65px] mb-20 font-extralight w-195 leading-17.5'>Создадим не просто сайт, а лицо вашего бизнеса </div>
                     <div className='bg-(--bg) text-[32px] rounded-4xl w-100 h-25 leading-25 text-center cursor-pointer'>Обговорить заказ</div>
                 </div>
-                <Image src={percentages} alt='' width={662} height={582} draggable='false' />
+                <AnimationComponent />
             </div>
             {/* <Image className="absolute -left-3.75 top-112.5" src={microcircuit} alt='' width={1083} height={692} draggable='false' /> */}
         </div>
