@@ -3,7 +3,7 @@ import styles from './styles.module.css';
 
 const AnimationComponent: React.FC = () => {
     return (
-        <div className='relative w-135 h-100 mx-auto mt-25'>
+        <div className='relative w-135 h-100 mx-auto mt-25 [@media(max-width:1329px)_and_(min-width:0px)]:hidden'>
             <div className={styles.wrapper}>
                 <div className={styles.candles}>
                     <div className={styles.lightWave}></div>

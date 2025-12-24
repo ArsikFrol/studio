@@ -1,4 +1,6 @@
 import Title from "./UI/Title"
+import Container from "./UI/Container"
+
 import Image from "next/image"
 
 import microcircuit from '../../public/microcircuit.png'
@@ -12,8 +14,8 @@ const listElem = [
 
 export default function Stages() {
     return (
-        <div className='relative [@media(max-width:649px)_and_(min-width:0px)]:w-100 mx-auto'>
-            <div className="[@media(max-width:1920px)_and_(min-width:1640px)]:w-385 [@media(max-width:1639px)_and_(min-width:1330px)]:w-7xl [@media(max-width:1329px)_and_(min-width:1100px)]:w-5xl [@media(max-width:1099px)_and_(min-width:820px)]:w-192.5 [@media(max-width:819px)_and_(min-width:650px)]:w-160 [@media(max-width:649px)_and_(min-width:0px)]:w-100 mx-auto pt-87.5 pb-25  [@media(max-width:1099px)_and_(min-width:0px)]:py-12.5">
+        <Container>
+            <div className="">
                 <Title title="Этапы создания" />
                 <div className='grid grid-cols-2 [@media(max-width:1099px)_and_(min-width:0px)]:grid-cols-[auto] grid-rows-[auto_auto] gap-12.5 w-250 [@media(max-width:1099px)_and_(min-width:820px)]:w-192.5 [@media(max-width:819px)_and_(min-width:650px)]:w-160 [@media(max-width:649px)_and_(min-width:0px)]:w-100 mx-auto'>
                     {
@@ -30,6 +32,7 @@ export default function Stages() {
                 </div>
             </div>
             {/* <Image style={{ height: '692px' }} className="absolute rotate-180 -right-87.5 top-100" src={microcircuit} alt='' width={1083} height={692} draggable='false' /> */}
-        </div>
+
+        </Container>
     )
 }
