@@ -11,26 +11,31 @@ export default function User() {
             <div className='flex items-center gap-x-10'>
                 <Image className="
                     [@media(max-width:819px)_and_(min-width:650px)]:w-50
-                    [@media(max-width:819px)_and_(min-width:650px)]:h-50"
+                    [@media(max-width:819px)_and_(min-width:650px)]:h-50 
+                    [@media(max-width:429px)_and_(min-width:0px)]:w-25 
+                    [@media(max-width:429px)_and_(min-width:0px)]:h-25"
                     src={user} alt='' width={300} height={300} draggable='false' />
                 <div className=''>
                     <div className='text-[92px] 
                         [@media(max-width:1639px)_and_(min-width:1330px)]:text-[75px] 
                         [@media(max-width:1329px)_and_(min-width:1100px)]:text-[65px] 
                         [@media(max-width:819px)_and_(min-width:650px)]:text-[50px] 
-                        [@media(max-width:649px)_and_(min-width:0px)]:text-[40px]
+                        [@media(max-width:649px)_and_(min-width:430px)]:text-[40px] 
+                        [@media(max-width:429px)_and_(min-width:0px)]:text-[30px]
                         font-medium'>Анна</div>
                     <div className='text-[92px] 
                         [@media(max-width:1639px)_and_(min-width:1330px)]:text-[75px] 
                         [@media(max-width:1329px)_and_(min-width:1100px)]:text-[65px]
                         [@media(max-width:819px)_and_(min-width:650px)]:text-[50px] 
-                        [@media(max-width:649px)_and_(min-width:0px)]:text-[45px]
+                        [@media(max-width:649px)_and_(min-width:430px)]:text-[45px] 
+                        [@media(max-width:429px)_and_(min-width:0px)]:text-[35px]
                         font-extralight'>Designer</div>
                     <div className='text-[65px] 
                         [@media(max-width:1639px)_and_(min-width:1330px)]:text-[50px] 
                         [@media(max-width:1329px)_and_(min-width:1100px)]:text-[40px] 
                         [@media(max-width:819px)_and_(min-width:650px)]:text-[30px] 
-                        [@media(max-width:649px)_and_(min-width:0px)]:text-[30px]
+                        [@media(max-width:649px)_and_(min-width:430px)]:text-[30px] 
+                        [@media(max-width:429px)_and_(min-width:0px)]:text-[20px]
                         font-extralight'>Опыт 8 лет</div>
                 </div>
             </div>
@@ -40,13 +45,15 @@ export default function User() {
                 [@media(max-width:1099px)_and_(min-width:0px)]:m-0 
                 [@media(max-width:1099px)_and_(min-width:820px)]:text-center 
                 [@media(max-width:1099px)_and_(min-width:820px)]:font-normal 
-                [@media(max-width:649px)_and_(min-width:0px)]:w-100'>
+                [@media(max-width:649px)_and_(min-width:430px)]:w-100 
+                [@media(max-width:429px)_and_(min-width:0px)]:w-75'>
                 <div className='text-[66px]
                     [@media(max-width:1639px)_and_(min-width:1330px)]:text-[50px] 
                     [@media(max-width:1329px)_and_(min-width:1100px)]:text-[40px] 
                     [@media(max-width:1099px)_and_(min-width:820px)]:text-[50px]
-                    [@media(max-width:819px)_and_(min-width:0px)]:text-[40px]
-                    [@media(max-width:819px)_and_(min-width:0px)]:text-center'>О себе</div>
+                    [@media(max-width:819px)_and_(min-width:430px)]:text-[40px]
+                    [@media(max-width:819px)_and_(min-width:0px)]:text-center 
+                    [@media(max-width:429px)_and_(min-width:0px)]:text-[30px]'>О себе</div>
                 <div className='text-[29px]
                     [@media(max-width:1639px)_and_(min-width:1100px)]:text-[20px] 
                     [@media(max-width:1329px)_and_(min-width:1100px)]:text-[20px] 
@@ -54,7 +61,8 @@ export default function User() {
                     [@media(max-width:1099px)_and_(min-width:0px)]:rounded-2xl 
                     [@media(max-width:1099px)_and_(min-width:0px)]:p-2.5
                     [@media(max-width:819px)_and_(min-width:650px)]:text-[17px] 
-                    [@media(max-width:649px)_and_(min-width:0px)]:text-[20px]'>
+                    [@media(max-width:649px)_and_(min-width:430px)]:text-[20px] 
+                    [@media(max-width:429px)_and_(min-width:0px)]:text-[15px]'>
                     <div className=''>Привет ! Я Анна, работаю в сфере веб дизайна уже 8 лет.</div>
                     <div className=''>Я превращаю ваши бизнес-цели в визуальный опыт, который цепляет клиентов и ведет их к действию. Мой дизайн — это не украшение, а точный инструмент для увеличения конверсии и узнаваемости вашего бренда.</div>
                 </div>

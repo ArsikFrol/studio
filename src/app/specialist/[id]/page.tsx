@@ -23,14 +23,15 @@ export default function specialist() {
     return (
         <div className='relative'>
             <Container>
-                <div className="">
+                <>
                     <User />
-                    <Cases listCases={listCases} showCount={3} showUser notPadding={true} />
+                    <Cases listCases={listCases} showCount={3} showUser notPaddingBigSizes={true} />
                     <div onClick={() => router.back()} className='cursor-pointer absolute left-2.5 top-0 text-[49px] font-extralight
                         [@media(max-width:1329px)_and_(min-width:820px)]:text-[40px] 
                         [@media(max-width:819px)_and_(min-width:650px)]:text-[35px] 
-                        [@media(max-width:659px)_and_(min-width:0px)]:text-[25px]'>Назад</div>
-                </div>
+                        [@media(max-width:659px)_and_(min-width:430px)]:text-[25px] 
+                        [@media(max-width:429px)_and_(min-width:0px)]:text-[20px]'>Назад</div>
+                </>
             </Container>
         </div>
     )

@@ -15,16 +15,32 @@ const listElem = [
 export default function Stages() {
     return (
         <Container>
-            <div className="">
+            <div className="relative">
                 <Title title="Этапы создания" />
-                <div className='grid grid-cols-2 [@media(max-width:1099px)_and_(min-width:0px)]:grid-cols-[auto] grid-rows-[auto_auto] gap-12.5 w-250 [@media(max-width:1099px)_and_(min-width:820px)]:w-192.5 [@media(max-width:819px)_and_(min-width:650px)]:w-160 [@media(max-width:649px)_and_(min-width:0px)]:w-100 mx-auto'>
+                <div className='grid grid-cols-2 
+                    [@media(max-width:1099px)_and_(min-width:0px)]:grid-cols-[auto] 
+                    grid-rows-[auto_auto] gap-12.5 w-250 
+                    [@media(max-width:1099px)_and_(min-width:820px)]:w-192.5 
+                    [@media(max-width:819px)_and_(min-width:650px)]:w-160 
+                    [@media(max-width:649px)_and_(min-width:430px)]:w-100 
+                    [@media(max-width:429px)_and_(min-width:0px)]:w-[320px]
+                    mx-auto'>
                     {
                         listElem.map((obj: { id: number, title: string, desc: string }, index: number) => {
                             return (
-                                <div className="relative border-[3px] border-[rgba(103,103,103,1)] rounded-3xl p-2.5 text-[31px] [@media(max-width:1329px)_and_(min-width:1100px)]:text-[25px] [@media(max-width:1099px)_and_(min-width:820px)]:text-[20px] [@media(max-width:819px)_and_(min-width:0px)]:text-[17px] font-light [@media(max-width:819px)_and_(min-width:0px)]:w-100 [@media(max-width:819px)_and_(min-width:0px)]:mx-auto" key={index}>
+                                <div className="relative border-[3px] border-[rgba(103,103,103,1)] 
+                                    rounded-3xl p-2.5 text-[31px] 
+                                    [@media(max-width:1329px)_and_(min-width:1100px)]:text-[25px] 
+                                    [@media(max-width:1099px)_and_(min-width:820px)]:text-[20px] 
+                                    [@media(max-width:819px)_and_(min-width:0px)]:text-[17px]
+                                    [@media(max-width:649px)_and_(min-width:430px)]:w-100 
+                                    [@media(max-width:429px)_and_(min-width:0px)]:w-75
+                                    [@media(max-width:819px)_and_(min-width:0px)]:mx-auto
+                                    font-light " key={index}>
                                     <div className='mb-3.75 font-medium'>{obj.title}</div>
                                     <div className=''>{obj.desc}</div>
-                                    <div className='absolute right-2.5 top-2.5 text-[33px]  [@media(max-width:819px)_and_(min-width:0px)]:text-[25px]'>0{obj.id}</div>
+                                    <div className='absolute right-2.5 top-2.5 text-[33px]  
+                                        [@media(max-width:819px)_and_(min-width:0px)]:text-[25px]'>0{obj.id}</div>
                                 </div>
                             )
                         })

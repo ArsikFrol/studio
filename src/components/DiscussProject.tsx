@@ -14,14 +14,39 @@ const listElem = [
 export default function DiscussProject() {
     return (
         <Container>
-            <div className='relative z-10'>
-                <div className='text-[65px] [@media(max-width:1639px)_and_(min-width:1330px)]:text-[60px] [@media(max-width:1329px)_and_(min-width:1100px)]:text-[50px] [@media(max-width:1099px)_and_(min-width:820px)]:text-[40px] [@media(max-width:819px)_and_(min-width:659px)]:text-[30px] [@media(max-width:659px)_and_(min-width:0px)]:text-[20px] font-medium mb-12.5   [@media(max-width:1099px)_and_(min-width:0px)]:mb-7.5'>Готовы доверить свой проект команде профессионалов? </div>
-                <div className='text-[65px] [@media(max-width:1639px)_and_(min-width:1330px)]:text-[60px] [@media(max-width:1329px)_and_(min-width:1100px)]:text-[50px] [@media(max-width:1099px)_and_(min-width:820px)]:text-[40px] [@media(max-width:819px)_and_(min-width:659px)]:text-[30px] [@media(max-width:659px)_and_(min-width:0px)]:text-[20px] font-semibold mb-17.5 [@media(max-width:1099px)_and_(min-width:0px)]:mb-7.5'>Давайте обсудим ваш проект.</div>
-                <div className='mx-auto p-10 bg-[rgba(217,217,217,1)] rounded-2xl flex flex-col gap-y-7.5 [@media(max-width:649px)_and_(min-width:0px)]:w-100'>
+            <div className='relative z-10 [@media(max-width:429px)_and_(min-width:0px)]:px-2.5'>
+                <div className='text-[65px] 
+                    [@media(max-width:1639px)_and_(min-width:1330px)]:text-[60px] 
+                    [@media(max-width:1329px)_and_(min-width:1100px)]:text-[50px] 
+                    [@media(max-width:1099px)_and_(min-width:820px)]:text-[40px] 
+                    [@media(max-width:819px)_and_(min-width:659px)]:text-[30px] 
+                    [@media(max-width:659px)_and_(min-width:0px)]:text-[20px]
+                    [@media(max-width:1099px)_and_(min-width:0px)]:mb-7.5
+                    font-medium mb-12.5'>Готовы доверить свой проект команде профессионалов? </div>
+                <div className='text-[65px] 
+                    [@media(max-width:1639px)_and_(min-width:1330px)]:text-[60px] 
+                    [@media(max-width:1329px)_and_(min-width:1100px)]:text-[50px] 
+                    [@media(max-width:1099px)_and_(min-width:820px)]:text-[40px] 
+                    [@media(max-width:819px)_and_(min-width:659px)]:text-[30px] 
+                    [@media(max-width:659px)_and_(min-width:0px)]:text-[20px]
+                    [@media(max-width:1099px)_and_(min-width:0px)]:mb-7.5
+                    font-semibold mb-17.'>Давайте обсудим ваш проект.</div>
+                <div className='mx-auto p-10 bg-[rgba(217,217,217,1)] rounded-2xl flex flex-col gap-y-7.5
+                    [@media(max-width:649px)_and_(min-width:430px)]:w-100 
+                    [@media(max-width:429px)_and_(min-width:0px)]:w-75'>
                     {
                         listElem.map((obj: { id: number, text: string }, index: number) => {
                             return (
-                                <div className="bg-white rounded-2xl text-[38px] [@media(max-width:1639px)_and_(min-width:1330px)]:text-[33px] [@media(max-width:1099px)_and_(min-width:820px)]:text-[20px] [@media(max-width:819px)_and_(min-width:0px)]:text-[15px] p-2.5 w-185 [@media(max-width:1639px)_and_(min-width:1330px)]:w-162.5 [@media(max-width:1329px)_and_(min-width:1100px)]:w-[500xp] [@media(max-width:1099px)_and_(min-width:820px)]:w-87.5 [@media(max-width:819px)_and_(min-width:0px)]:w-62.5" key={index}>{obj.text}</div>
+                                <div className="bg-white rounded-2xl text-[38px] 
+                                    [@media(max-width:1639px)_and_(min-width:1330px)]:text-[33px] 
+                                    [@media(max-width:1099px)_and_(min-width:820px)]:text-[20px] 
+                                    [@media(max-width:819px)_and_(min-width:0px)]:text-[15px] 
+                                    [@media(max-width:1639px)_and_(min-width:1330px)]:w-162.5 
+                                    [@media(max-width:1329px)_and_(min-width:1100px)]:w-[500xp] 
+                                    [@media(max-width:1099px)_and_(min-width:820px)]:w-87.5 
+                                    [@media(max-width:819px)_and_(min-width:430px)]:w-62.5
+                                    [@media(max-width:429px)_and_(min-width:0px)]:w-45
+                                    p-2.5 w-185 " key={index}>{obj.text}</div>
                             )
                         })
                     }

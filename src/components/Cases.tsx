@@ -22,33 +22,17 @@ type Props = {
     listCases: { id: number, image: StaticImageData }[],
     showCount: number,
     showUser?: boolean,
-    notPadding?: boolean
+    notPaddingBigSizes?: boolean
 }
 
 export default function Cases(props: Props) {
     const [showAll, setShowAll] = React.useState(false)
-    const [screenWidth, setScreenWidth] = React.useState<number | null>(null);
-
-    React.useEffect(() => {
-        setScreenWidth(window.innerWidth);
-
-        const handleResize = () => {
-            setScreenWidth(window.innerWidth);
-        };
-
-        window.addEventListener('resize', handleResize);
-
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
-
-
 
     return (
         <Container>
             <div style={props.showUser ? { position: 'relative' } : {}}>
-                <Title title="Кейсы" id="cases" notPadding={props.notPadding} />
+                <div className='
+                    [@media(max-width:330px)_and_(min-width:0px)]:pl-2.5'><Title title="Кейсы" id="cases" notPadding={props.notPaddingBigSizes} /></div>
                 <div style={props.listCases ? { position: 'relative', zIndex: '10' } : {}} className='grid 
                     grid-cols-3 
                     [@media(max-width:1639px)_and_(min-width:1100px)]:grid-cols-2 
