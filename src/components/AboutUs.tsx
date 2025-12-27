@@ -71,9 +71,8 @@ export default function AboutUs() {
                         <div className='font-medium [@media(max-width:819px)_and_(min-width:0px)]:mt-20 [@media(max-width:670px)_and_(min-width:0px)]:pl-8'>Подробнее о специалисте</div>
                         {/* <Image className="" src={arrow} alt='' width={712} height={200} draggable='false' /> */}
                     </div>
-
                 </div>
-                <Image className="absolute -right-125 rotate-180" src={microcircuit} alt='' width={1083} height={692} draggable='false' />
+                {/* <Image className="absolute -right-125 rotate-180" src={microcircuit} alt='' width={1083} height={692} draggable='false' /> */}
             </div>
         </Container >
     )
